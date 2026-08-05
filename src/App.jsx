@@ -107,8 +107,10 @@ const App = () => {
 
   return (
     <div className='bg-slate-800 min-h-screen p-20 flex gap-8 flex-wrap'>
-      {jobOpenings.map(element => {
-        return <Card company={element.companyName} post={element.post} posted={element.datePosted} tag1={element.tag1} tag2={element.tag2} pay={element.pay} location={element.location} logo={element.brandLogo}/>
+      {jobOpenings.map((element,idx) => {
+        return <div key={idx}>
+         <Card company={element.companyName} post={element.post} posted={element.datePosted} tag1={element.tag1} tag2={element.tag2} pay={element.pay} location={element.location} logo={element.brandLogo}/>
+        </div>
       })}
     </div>
   )

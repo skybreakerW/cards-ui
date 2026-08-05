@@ -3,8 +3,6 @@ import {Bookmark} from 'lucide-react'
 
 const Card = (props) => {
 
-    console.log(props)
-
     return(
     <div className="h-100 w-80 bg-white rounded-[2rem] flex flex-col">
 
